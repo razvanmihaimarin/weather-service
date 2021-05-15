@@ -19,30 +19,28 @@ public class WeatherControllerExceptionAdvice extends ResponseEntityExceptionHan
     public ResponseEntity<ErrorResponse> handleSizeException(ResponseStatusException exception) {
         return ResponseEntity
                 .status(exception.getStatus())
-                .body(ErrorResponse.builder()
-                        .message(buildErrorMessage(exception))
-                        .timestamp(LocalDateTime.now())
-                        .build());
+                .body(buildErrorResponse(buildErrorMessage(exception)));
     }
 
     @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<ErrorResponse> handleConstraintViolationException(ConstraintViolationException exception) {
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
-                .body(ErrorResponse.builder()
-                        .message(exception.getMessage())
-                        .timestamp(LocalDateTime.now())
-                        .build());
+                .body(buildErrorResponse(exception.getMessage()));
     }
 
     @ExceptionHandler(WeatherApiException.class)
     public ResponseEntity<ErrorResponse> handleWeatherApiException(WeatherApiException exception) {
         return ResponseEntity
                 .status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body(ErrorResponse.builder()
-                        .message(exception.getMessage())
-                        .timestamp(LocalDateTime.now())
-                        .build());
+                .body(buildErrorResponse(exception.getMessage()));
+    }
+
+    private ErrorResponse buildErrorResponse(String message) {
+        return ErrorResponse.builder()
+                .message(message)
+                .timestamp(LocalDateTime.now())
+                .build();
     }
 
     private String buildErrorMessage(ResponseStatusException exception) {

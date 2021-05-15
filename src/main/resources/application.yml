@@ -9,12 +9,6 @@ spring:
     username: postgres
     password: testpass
     driverClassName: org.postgresql.Driver
-  hikari:
-    connectionTimeout: 20000
-    maximumPoolSize: 30
-    idleTimeout: 60000
-    maximumIdle: 10
-    poolName: WeatherDbPool
   liquibase:
     enabled: true
     changeLog: classpath:db.changelog/db.changelog-master.yaml

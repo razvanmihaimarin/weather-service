@@ -23,6 +23,7 @@
         <embedded-postresql.version>2.0.7</embedded-postresql.version>
         <embedded-redis.version>2.0.7</embedded-redis.version>
         <spring-cloud.starter.version>2.2.8.RELEASE</spring-cloud.starter.version>
+        <springfox.version>3.0.0</springfox.version>
         <docker.image.prefix>leaseplan-digital</docker.image.prefix>
     </properties>
 
@@ -68,7 +69,12 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
             <version>${mapstruct.version}</version>
-            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${springfox.version}</version>
         </dependency>
 
         <dependency>
