@@ -1,6 +1,6 @@
 package com.leaseplan.digital.config.redis;
 
-import com.leaseplan.digital.model.dto.WeatherResponse;
+import com.leaseplan.digital.dto.WeatherResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;

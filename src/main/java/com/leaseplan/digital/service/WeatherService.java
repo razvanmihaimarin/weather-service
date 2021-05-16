@@ -4,7 +4,7 @@ import com.leaseplan.digital.config.properties.WeatherApiProperties;
 import com.leaseplan.digital.exception.WeatherApiException;
 import com.leaseplan.digital.mapper.WeatherMapper;
 import com.leaseplan.digital.model.api.WeatherApiResponse;
-import com.leaseplan.digital.model.dto.WeatherResponse;
+import com.leaseplan.digital.dto.WeatherResponse;
 import com.leaseplan.digital.model.entity.WeatherEntity;
 import com.leaseplan.digital.repository.WeatherRepository;
 import lombok.extern.slf4j.Slf4j;

@@ -1,7 +1,7 @@
 package com.leaseplan.digital.integration;
 
 
-import com.leaseplan.digital.model.dto.WeatherResponse;
+import com.leaseplan.digital.dto.WeatherResponse;
 import com.leaseplan.digital.model.entity.WeatherEntity;
 import com.leaseplan.digital.repository.WeatherRepository;
 import com.leaseplan.digital.service.WeatherService;

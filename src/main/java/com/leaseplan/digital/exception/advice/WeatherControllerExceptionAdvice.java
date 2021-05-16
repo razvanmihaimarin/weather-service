@@ -1,7 +1,7 @@
 package com.leaseplan.digital.exception.advice;
 
 import com.leaseplan.digital.exception.WeatherApiException;
-import com.leaseplan.digital.model.dto.ErrorResponse;
+import com.leaseplan.digital.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

@@ -1,4 +1,4 @@
-package com.leaseplan.digital.model.dto;
+package com.leaseplan.digital.dto;
 
 import lombok.*;
 

@@ -1,7 +1,7 @@
 package com.leaseplan.digital.mapper;
 
 import com.leaseplan.digital.model.api.WeatherApiResponse;
-import com.leaseplan.digital.model.dto.WeatherResponse;
+import com.leaseplan.digital.dto.WeatherResponse;
 import com.leaseplan.digital.model.entity.WeatherEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

@@ -33,6 +33,8 @@ docker-compose up
 ```
 
 ## Links
+To view the exposed endpoints:
+* [SwaggerUI](http://localhost:8080/swagger-ui )
 
 This example uses the following open source projects:
 * [Spring Boot](https://spring.io/projects/spring-boot)

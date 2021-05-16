@@ -1,6 +1,6 @@
 package com.leaseplan.digital.controller;
 
-import com.leaseplan.digital.model.dto.WeatherResponse;
+import com.leaseplan.digital.dto.WeatherResponse;
 import com.leaseplan.digital.service.WeatherService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
